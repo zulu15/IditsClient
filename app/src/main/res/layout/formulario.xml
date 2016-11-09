@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:padding="10dp"
+            android:text="Complete sus datos personales"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="italic" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Los campos marcados con (*) son obligatorios." />
+
+        <EditText
+            android:id="@+id/nombre_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Nombre(*)"
+            android:orientation="vertical"/>
+
+        <EditText
+            android:id="@+id/apellido_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Apellido(*)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/dni_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="D.N.I(*)"
+            android:inputType="number"
+            android:maxLength="8"
+            android:minLines="8" />
+
+        <EditText
+            android:id="@+id/cuil_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Cuil"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:maxLength="8"
+            android:minLines="8"
+            android:id="@+id/telefono_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Teléfono(*)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/email_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Email(*)"
+            android:inputType="textEmailAddress" />
+
+        <!-- Mensaje pidiendo que seleccione la localidad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Seleccione su provincia(*)" />
+
+
+        <Spinner
+            android:id="@+id/prov_spinner_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:entries="@array/provincias" />
+
+        <EditText
+            android:id="@+id/codpostal_per"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Código postal"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <EditText
+            android:id="@+id/edit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:focusable="false"
+            android:hint="Indique su fecha de nacimiento(*)" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿REALIZÁS APORTES? (EN RELACIÓN DE DEPENDENCIA Y/O INDEPENDIENTE)" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioSi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Si" />
+
+                <RadioButton
+                    android:id="@+id/radioNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="No(*)" />
+
+             </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+

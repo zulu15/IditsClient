@@ -1,0 +1,58 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Accordion"
+            custom:pager_animation_span="1100" />
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator2"
+            style="@style/AndroidImageSlider_Corner_Oval_Orange"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="EMPLEARTEC FORMACIÓN PROFESIONAL GRATUITA EN SOFTWARE Y TECNOLOGÍA "
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/custom_indicator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_gravity="fill_horizontal"
+            android:text="Con el objetivo de fomentar más y mejor empleo en las áreas de software y tecnología a nivel nacional, el Ministerio de Trabajo, Empleo y Seguridad Social de la Nación, en conjunto con CESSI, y con el apoyo de empresas referentes del sector, ofrecen cursos de capacitación gratuita en todo el país."
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>
